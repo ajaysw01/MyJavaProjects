@@ -1,0 +1,5 @@
+package com.aj.beans;
+
+public class Alien {
+
+}

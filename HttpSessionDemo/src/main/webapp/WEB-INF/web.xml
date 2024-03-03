@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  
+  
+  <servlet>
+  <servlet-name>First</servlet-name>
+  <servlet-class>com.aj.servlet.First</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>First</servlet-name>
+  <url-pattern>/first</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>Second</servlet-name>
+  <servlet-class>com.aj.servlet.Second</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>Second</servlet-name>
+  <url-pattern>/second</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+</web-app>

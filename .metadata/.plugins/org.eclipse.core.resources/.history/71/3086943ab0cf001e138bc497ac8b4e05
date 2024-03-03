@@ -1,0 +1,9 @@
+package com.aj.java8.mapdemo;
+
+public class MapDemo {
+	public static void main(String[] args) {
+		// converting list of city names to upper case and storign it into another collection
+		
+	}
+
+}

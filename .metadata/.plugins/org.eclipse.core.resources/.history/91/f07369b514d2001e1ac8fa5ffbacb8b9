@@ -1,0 +1,5 @@
+package com.aj.streams;
+
+public class ParallelStreamDemo {
+
+}

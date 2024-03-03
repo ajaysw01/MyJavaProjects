@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title></title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="" rel="icon">
+    <link href="" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+    <!-- Main CSS File -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <!-- <div style="height: 100vh;"> -->
+    <div class="d-flex flex-column justify-content-center align-items-center">
+        <div style="width: 35%; border: 0.1em solid #464646;border-radius: 0.5rem; padding: 1rem 1rem; ">
+            <h1>Register Owner</h1>
+            <form method="get" action="OwnerServlet">
+                <label  class="form-label">Name of the Charging Point</label>
+                <input type="text" name="chargingpoint" id="name" class="form-control" required>
+                <label  class="form-label">Owner Name</label>
+                <input type="text" name="name" id="nameHost" class="form-control" required>
+                <label  class="form-label">Email</label>
+                <input type="Email" name="email" id="email" class="form-control" required>
+                <label  class="form-label">Contact Number</label>
+                <input type="number" name="Cno" id="contact" maxlength="10" class="form-control" required>
+                <label  class="form-label">Address</label>
+                <input type="text" name="addr" id="address" class="form-control" required>
+                <label  class="form-label">Pincode</label>
+                <input type="number" name="pincode" id="pincode" maxlength="6" class="form-control" required>
+             
+                
+                <label for="type" class="form-label">Charger Type</label>
+                <select id="type" name="cType" class="form-select" aria-label="Default select example" required  >
+                    <option selected>Select Charger</option>
+                    <option value="Level 1 AC">Level 1 AC</option>
+                    <option value="Level 1 DC">Level 1 DC</option>
+                    <option value="Level 2 AC">Level 2 AC</option>
+                    <option value="Level 2 DC">Level 2 DC</option>
+                    <option value="Level 3 AC">Level 3 AC</option>
+                    <option value="Level 4 AC">Level 4 AC</option>
+                    <option value="Level 4 DC">Level 4 DC</option>
+                </select>
+                <label  class="form-label">Timings</label> <br>
+                <span> From : </span> <input type="time" name="inTime" id="time"  required> <span>To : </span> <input type="time" name="inTime" id=""
+                    name=""> <br>
+                <label class="form-label">Cost</label> <br>
+                <span>Rs :</span> <input type="number" name="cost" id="cost" required> <span>/Hour</span> <br>
+                <label class="form-label">Password</label>
+            	<input type="password" name="password" id="inputPassword5" pattern="(?=.\d)(?=.[a-z])(?=.*[A-Z]).{8,}" class="form-control" required>
+                <label  class="form-label">Facilities</label> <br>
+                <textarea name="facility" id="facility" style="width: 100%;"></textarea>
+                <!-- <input type="text" id="Firstname" class="form-control"> -->
+                <div class="d-flex justify-content-center">
+                    <button type="submit" value="submit" class="btn btn-info" type="submit">Submit</button> &nbsp;
+                    <button type="reset" value="clear" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                </div>
+            </form>
+        </div>
+        <div class="d-flex">
+            <a class="p-4" href="./index.html">Home</a>
+            <a class="p-4" href="./about.html">About</a>
+            <a class="p-4" href="./charger-grid.html">Charger Station</a>
+            <a class="p-4" href="./community.html">Community</a>
+            </div>
+    </div>
+
+
+    <!-- </div> -->
+
+
+    <div id="preloader"></div>
+
+
+    <!-- Vendor JS Files -->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="node_modules/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>

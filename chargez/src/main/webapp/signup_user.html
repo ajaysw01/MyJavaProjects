@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title></title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="" rel="icon">
+    <link href="" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+    <!-- Main CSS File -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    
+    <!-- <div style="height: 100vh;"> -->
+        <div class="d-flex flex-column justify-content-center align-items-center" style="height: 100vh;">
+        <div style="width: 35%; border: 0.1em solid #464646;border-radius: 0.5rem; padding: 1rem 1rem; ">
+            <h1>Sign Up</h1>
+            <form action="UserServelet" method="get">
+                <label  class="form-label">Firstname</label>
+                <input type="text" name="Firstname" id="Firstname" class="form-control" required>
+                <label  class="form-label">Lastname</label>
+                <input type="text" name="Lastname" id="Lastname" class="form-control" required>
+                <label class="form-label">Email</label>
+              
+                <input type="email" name="Email"  id="inputEmail" class="form-control" required>
+                <label  class="form-label">Password</label>
+                <input type="password" name="password" id="inputPassword" pattern="(?=.\d)(?=.[a-z])(?=.*[A-Z]).{8,}" class="form-control" required>
+                <div class="form-check">
+                                    </div>
+                <div></div>  <button type="submit" value="submit" class="btn btn-success" style="width: 100%">Sign Up</button>
+                </div>
+
+                
+               
+              </form>
+    
+   
+   
+    <div class="d-flex">
+        <a class="p-4" href="./index.html">Home</a>
+        <a class="p-4" href="./about.html">About</a>
+        <a class="p-4" href="./charger-grid.html">Charger Station</a>
+        </div>
+</div>
+</div>
+
+    <!-- </div> -->
+
+
+    <div id="preloader"></div>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Vendor JS Files -->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="node_modules/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>
